@@ -1,0 +1,40 @@
+package cn.com.entity;
+/**
+ * 
+ * @author guofeng
+ * @see 坐标
+ */
+public class XY {
+	private final double x, y;
+
+	/**
+	 * 创建坐标系
+	 * 
+	 * @param x
+	 * @param y
+	 */
+	public XY(double x, double y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+
+	/**
+	 * Returns a copy of the current {@link Address} instance which is a new
+	 * entity in terms of persistence.
+	 * 
+	 * @return
+	 */
+	public XY getCopy() {
+		return new XY(this.x, this.y);
+	}
+
+	public double getX() {
+		return x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+}
