@@ -1,0 +1,37 @@
+package cn.com.dao;
+
+import cn.com.entity.Address;
+
+import java.util.List;
+import org.springframework.data.repository.Repository;
+
+
+
+public interface AddressRepository extends  Repository<Address, String> {
+	/**
+	 * 命名规范
+	 * find…By, read…By, query…By, count…By, and get…By 
+	 * AllIgnoreCase ,IgnoreCase ，OrderBy（Asc or Desc）
+	 * @param id
+	 * @return
+	 */
+	Address findById(String id);
+
+	/**
+	 * �����ַ
+	 * 
+	 * @param id
+	 * @return
+	 */
+	Address save(Address address);
+
+	/**
+	 * ���ݸ���ŷ��ص�ַ�б�
+	 * 
+	 * @param id
+	 * @return
+	 */
+	List<Address> findByParentid(int parentid);
+	
+	
+}
