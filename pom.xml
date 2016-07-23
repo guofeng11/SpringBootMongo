@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.com.lianduan</groupId>
-	<artifactId>userservice</artifactId>
+	<artifactId>SpringBootMongo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<parent>
